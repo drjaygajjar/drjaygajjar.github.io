@@ -123,7 +123,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.social-btn {
+.social-btn, .download-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -132,28 +132,19 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.social-btn:hover {
+.social-btn:hover, .download-btn:hover:not(.disabled) {
     background-color: #3498db;
+    transform: translateY(-3px);
 }
 
 .download-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
     background-color: #27ae60;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
 }
 
-.download-btn:hover {
+.download-btn:hover:not(.disabled) {
     background-color: #219a52;
 }
 
@@ -181,6 +172,13 @@ body {
     color: #2c3e50;
     margin-bottom: 2rem;
     font-size: 2rem;
+}
+
+.section h2 i {
+    font-size: 0.9em;
+    margin-right: 8px;
+    position: relative;
+    top: -4px;
 }
 
 .section h2 i, .section h3 i {
@@ -393,6 +391,11 @@ footer {
     margin-bottom: 0.8rem;
     line-height: 1.6;
     color: #444;
+    text-align: justify;
+}
+
+.experience-details li strong {
+    font-weight: 600;
 }
 
 .experience-details li:before {
@@ -569,25 +572,44 @@ footer {
     background-color: #f8f9fa;
     padding: 1.5rem;
     border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
 }
 
 .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.skill-item:hover h3 {
+    color: #3498db;
 }
 
 .skill-item h3 {
     color: #2c3e50;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     padding-bottom: 0;
+}
+
+.skill-item h3 i {
+    transition: all 0.3s ease;
+    margin-right: 8px;
+    position: relative;
+    top: -2px;
+}
+
+.skill-item:hover h3 i {
+    transform: scale(1.1);
+    color: #3498db;
 }
 
 .skill-item p {
     color: #444;
     line-height: 1.6;
     font-size: 1.05rem;
+    text-align: justify;
 }
 
 /* Mobile responsiveness */
