@@ -633,11 +633,11 @@ footer {
     }
 
     .hero {
-        padding-top: 10px;
+        padding-top: 0;
     }
 
     main {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     .social-links {
