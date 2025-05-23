@@ -163,6 +163,10 @@ body {
     padding: 5rem 2rem;
 }
 
+.section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
 .section:nth-child(even) {
     background-color: #f8f9fa;
 }
@@ -220,13 +224,13 @@ footer {
 }
 
 /* About section */
-.about-content {
-    max-width: 800px;
+.about-content, .experience-content, .certifications-content {
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: white;
+    background-color: #f8f9fa;
     border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
 .about-text {
@@ -242,13 +246,13 @@ footer {
 }
 
 /* Education section */
-.education-content {
-    max-width: 800px;
+.education-content, .research-content, .skills-content {
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
 .education-item, .usmle-scores {
@@ -351,15 +355,6 @@ footer {
 }
 
 /* Experience section */
-.experience-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
 .experience-item {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
@@ -413,15 +408,6 @@ footer {
 }
 
 /* Research section */
-.research-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
 .research-content h3 {
     color: #1a365d;
     font-size: 1.6rem;
@@ -503,15 +489,6 @@ footer {
 }
 
 /* Certifications section */
-.certifications-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
 .certification-item {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -563,15 +540,6 @@ footer {
 }
 
 /* Skills section */
-.skills-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
 .skill-category {
     display: grid;
     gap: 2rem;
@@ -795,4 +763,32 @@ footer {
 
 main {
     padding-top: 70px;
+}
+
+#about {
+    background-color: #ffffff;
+}
+
+#education {
+    background-color: #f8f9fa;
+}
+
+#experience {
+    background-color: #ffffff;
+}
+
+#research {
+    background-color: #f8f9fa;
+}
+
+#certifications {
+    background-color: #ffffff;
+}
+
+#skills {
+    background-color: #f8f9fa;
+}
+
+#contact {
+    background-color: #ffffff;
 } 
