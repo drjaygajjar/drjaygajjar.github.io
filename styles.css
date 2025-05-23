@@ -623,6 +623,15 @@ footer {
         margin-bottom: 0.5rem;
     }
 
+    .hero {
+        padding-top: 0;
+        height: calc(100vh - 60px);
+    }
+
+    main {
+        padding-top: 0;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
         margin-top: 0.5rem;
@@ -630,14 +639,6 @@ footer {
 
     .hero-content p {
         font-size: 1.2rem;
-    }
-
-    .hero {
-        padding-top: 0;
-    }
-
-    main {
-        padding-top: 20px;
     }
 
     .social-links {
