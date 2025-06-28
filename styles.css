@@ -139,14 +139,6 @@ body {
     transform: translateY(-3px);
 }
 
-.download-btn {
-    background-color: #27ae60;
-}
-
-.download-btn:hover:not(.disabled) {
-    background-color: #219a52;
-}
-
 .download-btn.disabled {
     background-color: #95a5a6;
     cursor: not-allowed;
@@ -155,6 +147,23 @@ body {
 
 .download-btn.disabled:hover {
     background-color: #95a5a6;
+}
+
+.timeline-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #1a365d;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.timeline-btn:hover {
+    background-color: #3498db;
+    transform: translateY(-3px);
 }
 
 /* Sections */
@@ -648,6 +657,11 @@ footer {
     }
 
     .social-btn, .download-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .timeline-btn {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
     }
