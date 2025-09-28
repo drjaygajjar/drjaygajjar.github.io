@@ -430,6 +430,12 @@ footer {
 }
 
 .research-experience .experience-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.research-experience .experience-item:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
